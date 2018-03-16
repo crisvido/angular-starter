@@ -120,17 +120,8 @@ module.exports = function (config) {
      * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
      */
     browsers: [
-      'Chrome',
 	  'PhantomJS',
-      'ChromeTravisCi'
     ],
-
-    customLaunchers: {
-      ChromeTravisCi: {
-        base: 'ChromeHeadless',
-        flags: ['--no-sandbox', '--disable-gpu']
-      }
-    },
 
     /**
      * Continuous Integration mode

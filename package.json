@@ -67,7 +67,7 @@
     "start:aot": "npm run server:aot:dev",
     "test": "npm run lint && karma start",
     "test:sonar": "npm run lint && cross-env SONAR_QUBE=1 karma start",
-    "test:ci": "karma start --single-run --browsers PhantomJS_custom",
+    "test:ci": "karma start --single-run --browsers PhantomJS",
     "tslint": "tslint",
     "typedoc": "typedoc",
     "version": "npm run build",
