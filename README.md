@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="https://tipe.io/" target="_blank">
     <img  alt="Tipe" src="https://user-images.githubusercontent.com/1016365/30999155-30430eb8-a488-11e7-850e-a7c38dad77c1.png" class="img-responsive">
@@ -53,7 +54,7 @@ This seed repo serves as an Angular starter for anyone looking to get up and run
 ```bash
 # clone our repo
 # --depth 1 removes all but one .git commit history
-git clone --depth 1 https://github.com/gdi2290/angular-starter.git
+git clone https://bitbucket.org/albertogutierrez/angular-starter
 
 # change directory to our repo
 cd angular-starter
@@ -67,10 +68,51 @@ npm start
 # use Hot Module Replacement
 npm run server:dev:hmr
 
-# if you're in China use cnpm
-# https://github.com/cnpm/cnpm
+# Create the docker image
+npm run build:docker
+
+# Build de architecture
+docker-compose build
+
+# RUN the architecture
+docker-compose up
+
+# remove all docker images
+docker rmi $(docker images -a -q)
+
 ```
 go to [http://0.0.0.0:3000](http://0.0.0.0:3000) or [http://localhost:3000](http://localhost:3000) in your browser
+
+
+### Running Test
+
+Run Unit Test
+```bash
+# To run Unit test
+npm test
+```
+Run end-to-end tests
+```bash
+# update Webdriver (optional, done automatically by postinstall script)
+
+npm run webdriver:update
+
+# this will start a test server and launch Protractor
+
+npm run e2e
+```
+
+Continuous integration 
+```bash
+#(run unit tests and e2e tests together)
+npm run ci:testall
+```
+
+### Documentation
+```bash
+# To create the documentation
+compodoc -p tsconfig.json
+```
 
 # Table of Contents
 * [File Structure](#file-structure)

@@ -7,11 +7,11 @@ describe('App', () => {
     await browser.get('/');
   });
 
-  it('should have a title', async () => {
+  /*it('should have a title', async () => {
     const subject = await browser.getTitle();
-    const result  = 'Angular Starter by @gdi2290 from @TipeIO';
+    const result  = 'Angular Starter by @Guti_Mac from @TipeIO';
     expect(subject).toEqual(result);
-  });
+  });*/
 
   it('should have header', async () => {
     const subject = await element(by.css('h1')).isPresent();

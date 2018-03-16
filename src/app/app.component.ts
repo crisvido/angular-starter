@@ -50,7 +50,7 @@ import { AppState } from './app.service';
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>
-      <span>Angular Starter by <a [href]="twitter">@gdi2290</a></span>
+      <span>Angular Starter by <a [href]="twitter">@GutiMac</a></span>
       <div>
         <a [href]="url">
           <img [src]="tipe" width="25%">
@@ -62,8 +62,8 @@ import { AppState } from './app.service';
 export class AppComponent implements OnInit {
   public name = 'Angular Starter';
   public tipe = 'assets/img/tipe.png';
-  public twitter = 'https://twitter.com/gdi2290';
-  public url = 'https://tipe.io';
+  public twitter = 'https://twitter.com/Guti_Mac';
+  public url = 'https://shop.mango.com/preHome.faces';
   public showDevModule: boolean = environment.showDevModule;
 
   constructor(

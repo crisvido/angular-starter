@@ -31,10 +31,9 @@ exports.config = {
 
   directConnect: true,
   capabilities: {
-    browserName: 'chrome',
-    chromeOptions: {
-      args: [ "--headless", "--disable-gpu", "--window-size=800x600", "--no-sandbox" ]
-    }
+    browserName: 'phantomjs',
+	phantomjs.binary.path: require('phantomjs').path,
+	phantomjs.ghostdriver.cli.args: ['--loglevel=DEBUG']
   },
 
   onPrepare: function() {

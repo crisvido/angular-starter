@@ -8,7 +8,7 @@
 # THANKS
 
   <name>
-  PatrickJS -- @gdi2290
+  @Guti_mac on Twitter
   AngularClass -- @AngularClass
 
 # TECHNOLOGY COLOPHON
