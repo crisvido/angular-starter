@@ -1,7 +1,7 @@
 /**
  * @author: tipe.io
  */
-process.env.CHROME_BIN = require('puppeteer').executablePath();
+process.env.CHROMIUM_BIN = require('puppeteer').executablePath();
 
 module.exports = function (config) {
   const testWebpackConfig = require('./webpack.test.js')({ env: 'test' });
