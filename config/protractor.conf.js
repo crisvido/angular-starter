@@ -6,8 +6,7 @@ require('ts-node/register');
 var helpers = require('./helpers');
 
 exports.config = {
-  baseUrl: 'http://localhost:3000/',
-  seleniumAddress: 'http://localhost:9515',
+  seleniumAddress: 'http://localhost:3030',
 
   /**
    * Use `npm run e2e`
