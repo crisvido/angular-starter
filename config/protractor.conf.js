@@ -29,9 +29,8 @@ exports.config = {
     defaultTimeoutInterval: 40000
   },
 
-  directConnect: true,
   capabilities: {
-    browserName: 'phantomJS',
+    browserName: 'phantomJS'
   },
 
   onPrepare: function() {
