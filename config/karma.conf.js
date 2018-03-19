@@ -1,7 +1,6 @@
 /**
  * @author: tipe.io
  */
-process.env.CHROMIUM_BIN = require('puppeteer').executablePath();
 
 module.exports = function (config) {
   const testWebpackConfig = require('./webpack.test.js')({ env: 'test' });
@@ -121,7 +120,7 @@ module.exports = function (config) {
      * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
      */
     browsers: [
-	  'Chrome', 'Chromium',
+	  'phantomJS'
     ],
 
     /**
