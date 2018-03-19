@@ -30,7 +30,9 @@ exports.config = {
   },
 
   capabilities: {
-    browserName: 'phantomJS'
+    browserName: 'phantomjs',
+	  phantomjs.binary.path: './node_modules/phantomjs/bin/phantomjs',
+    phantomjs.ghostdriver.cli.args: ['--loglevel=DEBUG']
   },
 
   onPrepare: function() {
