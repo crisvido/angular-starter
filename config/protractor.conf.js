@@ -30,6 +30,7 @@ exports.config = {
   },
 
   capabilities: {
+  'directConnect': true,
   browserName: 'chrome',
 
   chromeOptions: {
