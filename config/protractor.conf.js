@@ -30,11 +30,13 @@ exports.config = {
   },
 
   capabilities: {
-    browserName: 'phantomjs',
-	  'phantomjs.binary.path': '../node_modules/phantomjs/bin/phantomjs',
-    'phantomjs.ghostdriver.cli.args': ['--loglevel=DEBUG']
-  },
+  browserName: 'chrome',
 
+  chromeOptions: {
+     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+   }
+  }
+  
   onPrepare: function() {
     browser.ignoreSynchronization = true;
   },
