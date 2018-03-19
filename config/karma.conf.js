@@ -120,7 +120,7 @@ module.exports = function (config) {
      * available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
      */
     browsers: [
-	  'phantomJS'
+	  'PhantomJS',
     ],
 
     /**
@@ -161,4 +161,6 @@ module.exports = function (config) {
       'ChromeTravisCi'
     ];
   }
+
+  config.set(configuration);
 };
