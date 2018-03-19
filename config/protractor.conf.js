@@ -7,6 +7,7 @@ var helpers = require('./helpers');
 
 exports.config = {
   baseUrl: 'http://localhost:3000/',
+  seleniumAddress: 'http://localhost:9515',
 
   /**
    * Use `npm run e2e`
