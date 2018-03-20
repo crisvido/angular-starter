@@ -35,7 +35,7 @@ exports.config = {
 
   chromeOptions: {
     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ],
-    binary: './node_modules/chromedriver/lib/chromedriver/chromedriver.exe'
+    binary: 'node_modules/chromedriver/lib/chromedriver/chromedriver.exe'
    }
   },
   
