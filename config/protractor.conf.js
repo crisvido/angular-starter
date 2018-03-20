@@ -35,7 +35,7 @@ exports.config = {
 
   chromeOptions: {
     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ],
-    binary: 'node_modules/puppeteer/.local-chromium/linux-543305/chrome.exe
+    binary: 'node_modules/puppeteer/.local-chromium/linux-543305/chrome.exe'
    }
   },
   
