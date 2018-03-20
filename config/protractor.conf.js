@@ -34,8 +34,7 @@ exports.config = {
   browserName: 'chrome',
 
   chromeOptions: {
-     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ],
-     binary: './node_modules/selenium-webdriver/'
+     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
    }
   },
   
