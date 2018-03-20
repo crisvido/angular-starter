@@ -35,7 +35,7 @@ exports.config = {
 
   chromeOptions: {
     args: [ "--headless", "--disable-gpu", "--window-size=800,600" ],
-    binary: '/var/jenkins_home/workspace/Angular Starter/node_modules/puppeteer/.local-chromium/linux-543305/chrome.exe'
+    binary: './node_modules/webdriver-manager/selenium/chromedriver_2.37.exe'
    }
   },
   
